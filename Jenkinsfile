@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', credentialsId: 'github credentials', url: 'https://github.com/sindhujash/assign_2.git'
+                git branch: 'master', credentialsId: 'github credentials', url: 'https://github.com/sindhujash/assign_2.git'
             }
         }
         stage('Build') {
